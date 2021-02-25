@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/trade-size-calculator/precache-manifest.0a675647309a0e0a63ab773488403e09.js"
+  "/trade-size-calculator/precache-manifest.2c0a70b908f8a374c7a66eec5d4d2b49.js"
 );
 
 self.addEventListener('message', (event) => {
