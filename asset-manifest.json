@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/trade-size-calculator/static/css/main.564779a3.chunk.css",
-    "main.js": "/trade-size-calculator/static/js/main.7197616b.chunk.js",
-    "main.js.map": "/trade-size-calculator/static/js/main.7197616b.chunk.js.map",
+    "main.js": "/trade-size-calculator/static/js/main.2cf80004.chunk.js",
+    "main.js.map": "/trade-size-calculator/static/js/main.2cf80004.chunk.js.map",
     "runtime-main.js": "/trade-size-calculator/static/js/runtime-main.7bda8f60.js",
     "runtime-main.js.map": "/trade-size-calculator/static/js/runtime-main.7bda8f60.js.map",
     "static/css/2.614afd85.chunk.css": "/trade-size-calculator/static/css/2.614afd85.chunk.css",
-    "static/js/2.cda321bc.chunk.js": "/trade-size-calculator/static/js/2.cda321bc.chunk.js",
-    "static/js/2.cda321bc.chunk.js.map": "/trade-size-calculator/static/js/2.cda321bc.chunk.js.map",
+    "static/js/2.bde10127.chunk.js": "/trade-size-calculator/static/js/2.bde10127.chunk.js",
+    "static/js/2.bde10127.chunk.js.map": "/trade-size-calculator/static/js/2.bde10127.chunk.js.map",
     "index.html": "/trade-size-calculator/index.html",
-    "precache-manifest.c2d59054987614b5212678a7caa514be.js": "/trade-size-calculator/precache-manifest.c2d59054987614b5212678a7caa514be.js",
+    "precache-manifest.111b7fe31274c0962ac36cd3b965adae.js": "/trade-size-calculator/precache-manifest.111b7fe31274c0962ac36cd3b965adae.js",
     "service-worker.js": "/trade-size-calculator/service-worker.js",
     "static/css/2.614afd85.chunk.css.map": "/trade-size-calculator/static/css/2.614afd85.chunk.css.map",
     "static/css/main.564779a3.chunk.css.map": "/trade-size-calculator/static/css/main.564779a3.chunk.css.map"
