@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba137b7702e74d48d0a456670e30810c",
+    "revision": "767d1e88dfbe15e86010ecb5721c347b",
     "url": "/trade-size-calculator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trade-size-calculator/static/css/2.614afd85.chunk.css"
   },
   {
-    "revision": "b11b35b1488675dc4db7",
+    "revision": "d0d4ba56fa60236f8398",
     "url": "/trade-size-calculator/static/css/main.564779a3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trade-size-calculator/static/js/2.bde10127.chunk.js"
   },
   {
-    "revision": "b11b35b1488675dc4db7",
-    "url": "/trade-size-calculator/static/js/main.80cbae01.chunk.js"
+    "revision": "d0d4ba56fa60236f8398",
+    "url": "/trade-size-calculator/static/js/main.0080a7fb.chunk.js"
   },
   {
     "revision": "bf7863c830ba50c8af2c",
