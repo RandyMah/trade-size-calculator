@@ -174,7 +174,7 @@ export default class Home extends Component {
         <div className="form-row">
           <div className="col">
             <div className="form-group">
-              <label>Account Size</label>
+              <label>Account Size ($)</label>
               <input
                 type="number"
                 step=".01"
@@ -238,7 +238,7 @@ export default class Home extends Component {
           </div>
           <div className="col">
             <div className="form-group">
-              <label>Profit And Loss</label>
+              <label>Profit</label>
               <input
                 type="number"
                 className={`form-control ${this.state.positionMode}`}
