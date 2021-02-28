@@ -150,7 +150,7 @@ export default class Home extends Component {
     if (!Number.isNaN(value) && value !== undefined)
       that.setState({
         units: value.toFixed(5),
-        positionMode: value < 0.001 ? "short" : "",
+        tradeStatus: value < 0.001 ? "short" : "",
       });
   }
   doCalculations(that) {
@@ -318,7 +318,7 @@ export default class Home extends Component {
               <input
                 disabled
                 type="text"
-                className={`form-control ${this.state.positionMode}`}
+                className={`form-control ${this.state.tradeStatus}`}
                 value={this.state.units}
               />
             </div>
