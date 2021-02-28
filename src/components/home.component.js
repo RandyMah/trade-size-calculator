@@ -22,7 +22,7 @@ export default class Home extends Component {
   }
 
   handleChange(arrayKey, e) {
-    this.setState({ [arrayKey]: e.target.value }, () => {
+    this.setState({ [arrayKey]: Number.parseFloat(e.target.value) }, () => {
       this.doCalculations(this);
     });
   }
@@ -124,8 +124,7 @@ export default class Home extends Component {
         (entryPrice - (stopLoss - onePercentOfStopLoss * 0.99));
     } else {
       value =
-        (stopLoss + onePercentOfStopLoss) /
-        ((stopLoss + onePercentOfStopLoss) * 1.01 - entryPrice);
+        (stopLoss+onePercentOfStopLoss)/(((stopLoss+onePercentOfStopLoss)*1.01)-entryPrice)
     }
     if (!Number.isNaN(value) && value !== undefined)
       that.setState({
@@ -150,7 +149,8 @@ export default class Home extends Component {
     let value = that.state.contracts / that.state.entryPrice;
     if (!Number.isNaN(value) && value !== undefined)
       that.setState({
-        units: value.toFixed(3),
+        units: value.toFixed(5),
+        positionMode: value < 0.001 ? "short" : "",
       });
   }
   doCalculations(that) {
@@ -177,6 +177,7 @@ export default class Home extends Component {
               <label>Account Size</label>
               <input
                 type="number"
+                step=".01"
                 className="form-control"
                 placeholder="Enter Account Size"
                 onChange={(evt) => this.handleChange("accountSize", evt)}
@@ -228,6 +229,7 @@ export default class Home extends Component {
               <label>Entry Price</label>
               <input
                 type="number"
+                step=".0000000001"
                 className="form-control"
                 placeholder="Enter Entry Price"
                 onChange={(evt) => this.handleChange("entryPrice", evt)}
@@ -238,7 +240,7 @@ export default class Home extends Component {
             <div className="form-group">
               <label>Profit And Loss</label>
               <input
-                type="text"
+                type="number"
                 className={`form-control ${this.state.positionMode}`}
                 disabled
                 value={this.state.profitAndLoss}
@@ -253,6 +255,7 @@ export default class Home extends Component {
               <label>Target Price</label>
               <input
                 type="number"
+                step=".0000000001"
                 className="form-control"
                 placeholder="Enter Target Price"
                 onChange={(evt) => this.handleChange("targetPrice", evt)}
@@ -278,6 +281,7 @@ export default class Home extends Component {
               <label>Stop Loss Price</label>
               <input
                 type="number"
+                step=".0000000001"
                 className="form-control"
                 placeholder="Enter Stop Loss Price"
                 onChange={(evt) => this.handleChange("stopLoss", evt)}
@@ -314,7 +318,7 @@ export default class Home extends Component {
               <input
                 disabled
                 type="text"
-                className="form-control"
+                className={`form-control ${this.state.positionMode}`}
                 value={this.state.units}
               />
             </div>
