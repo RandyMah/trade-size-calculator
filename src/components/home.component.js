@@ -36,7 +36,7 @@ export default class Home extends Component {
               entryPrice.dispatchEvent(new Event('focus', { bubbles: true}));
               nativeInputValueSetter.call(entryPrice, '${this.state.entryPrice}');
               entryPrice.dispatchEvent(inputEvent);
-              var leverage = document.querySelector('[name=leverage]');
+              var leverage = document.querySelector('[data-tip="Leverage"]').children[1];
               nativeInputValueSetter.call(leverage, '${this.state.leverage}');
               leverage.dispatchEvent(inputEvent);
               var contractSize = document.querySelector('[name=sum]');
