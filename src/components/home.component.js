@@ -42,10 +42,10 @@ export default class Home extends Component {
               var contractSize = document.querySelector('[name=sum]');
               nativeInputValueSetter.call(contractSize, '${this.state.contracts}');
               contractSize.dispatchEvent(inputEvent);
-              var stopLossPrice = document.querySelectorAll('[name=price]')[1];
+              var stopLossPrice = document.querySelectorAll('[type=number][inputmode=decimal]')[7];
               nativeInputValueSetter.call(stopLossPrice, '${this.state.stopLoss}');
               stopLossPrice.dispatchEvent(inputEvent);
-              var takeProfitPrice = document.querySelector('[name=orders\\\\.0\\\\.price]');
+              var takeProfitPrice = document.querySelectorAll('[type=number][inputmode=decimal]')[8];
               nativeInputValueSetter.call(takeProfitPrice, '${this.state.targetPrice}');
               takeProfitPrice.dispatchEvent(inputEvent);
             `;
